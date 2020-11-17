@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 
 import { TDefMiddlewares } from '../../../../src/index';
 
-export const defMiddlewares: TDefMiddlewares = {
+export const defExpressMiddlewares: TDefMiddlewares = {
   cookiePrser: cookieParser(),
   bodyParser: [express.json(), express.urlencoded({ extended: true })],
   enhancedSecurity: helmet(),
